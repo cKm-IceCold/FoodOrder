@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'users',
+    'food',
+    'orders',
 ]
 
 MIDDLEWARE = [
@@ -121,6 +124,6 @@ STATIC_URL = 'static/'
 AUTH_USER_MODEL = 'users.CustomUser'
 
 AUTHENTICATION_BACKENDS = [
-    'relationship_app.backends.EmailOrPhoneBackend',
+    'users.backends.EmailOrPhoneBackend',
     'django.contrib.auth.backends.ModelBackend',  # fallback
 ]
