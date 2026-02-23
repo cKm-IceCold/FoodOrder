@@ -1,0 +1,1 @@
+This backend is for a Restaurant business where admin can add new foods delicacy and accept online orders. The folder Backend represents the python(django) version of it and the jsbackend represent the Javascript(express) version.
